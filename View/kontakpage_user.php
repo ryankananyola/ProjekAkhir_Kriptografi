@@ -3,7 +3,7 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Homepage User</title>
+      <title>Kontak</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     </head>
     <body>
@@ -16,25 +16,13 @@
             echo "
                 <script>
                     alert('Anda belum login. Silakan login terlebih dahulu.');
-                    document.location.href = '../../LoginPage.php';
+                    document.location.href = 'login.php';
                 </script>
             ";
         }
     ?>
        <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
     <style scoped>
-
-      footer {  
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding: 15px;
-        background: rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(10px); 
-        color: black;
-        text-align: center;
-      }
-
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
       .navbar-1-1.navbar-light .navbar-nav .nav-link {
@@ -68,6 +56,11 @@
         <div>
           Halo <?php echo $_SESSION['username'];?>!
         </div>
+        <!-- <div>
+          <img class="position-absolute d-lg-block d-none hero-right" style="width: 50px;"
+              src="assets/img/logo.png"
+              alt="logo" />
+        </div> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -83,12 +76,15 @@
             <li class="nav-item">
               <a class="nav-link px-md-4" href="kritikpage_user.php">Kritik dan Saran</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link px-md-4" href="#">Teams</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link px-md-4" href="reviewpage_user.php">Review</a>
             </li>
           </ul>
           <div class="d-flex">
-            <a class="btn btn-get-started btn-get-started-blue text-white" href="../session/logout.php">Logout</a>
+            <a class="btn btn-get-started btn-get-started-blue text-white" href="logout.php">Logout</a>
           </div>
         </div>
       </div>
@@ -99,6 +95,18 @@
 				background-color: #FAFCFF;
 			">
     <style>
+
+            footer {    
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.1); 
+                backdrop-filter: blur(10px); 
+                color: black;
+                text-align: center;
+            }
+
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
       .header-3-3 .modal-backdrop.show {
@@ -472,11 +480,11 @@
       
       <div class="hr">
         <hr style="
-							border-color: #F4F4F4;
-							background-color: #F4F4F4;
-							opacity: 1;
-							margin: 0 !important;
-						" />
+			border-color: #F4F4F4;
+			background-color: #F4F4F4;
+			opacity: 1;
+			margin: 0 !important;
+			" />
       </div>
 
       <div>
@@ -485,14 +493,18 @@
           <div
             class="left-column flex-lg-grow-1 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
             <h1 class="title-text-big">
-              Apa Itu<br class="d-lg-block d-none" />
+              Customer Service<br class="d-lg-block d-none" />
               <span style="color: #4E91F9">Yasha Restoran</span>?<br class="d-lg-block d-none" />
               
             </h1>
             <p class="text-caption">
-              Yasha Restoran adalah restoran makanan khas dari daerah Timur Indonesia.
+            <br class="d-sm-block d-none" />
+              Anda dapat menghubungi kami melalui:
               <br class="d-sm-block d-none" />
-              Dengan fokus pada makanan-makanan yang mungkin jarang ada selain di daerah Timur, Kami berharap dapat memenuhi rasa penasaran konsumen.
+              <br class="d-sm-block d-none" />
+              081234567891 (Admin 1)
+              <br class="d-sm-block d-none" />
+              081987654321 (Admin 2)
             </p>
             
           </div>
@@ -503,10 +515,11 @@
   </section> 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     
+    
     <!-- Blurred Footer -->
     <footer>
         © 2024 By Ryan Kana Nyola. All rights reserved.
     </footer>
-</body>
-</html>
+    </body>
+  </html>
     

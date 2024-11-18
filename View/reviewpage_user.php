@@ -77,7 +77,7 @@
                 <a class="nav-link px-md-4 active" aria-current="page" href="homepage_user.php">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link px-md-4" href="kontak.php">Kontak</a>
+                <a class="nav-link px-md-4" href="kontakpage_user.php">Kontak</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link px-md-4" href="kritikpage_user.php">Kritik dan Saran</a>
