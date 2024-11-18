@@ -1,0 +1,52 @@
+.judul {
+    color: #ffffff;
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .tombol {
+    padding-top: 150px;
+    text-align: center;
+  }
+  .headerTengah {
+    color: #ffffff;
+    padding: 40px 0;
+    font-weight: 800;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .headerTengah .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+/* Button Styling */
+.btn-primary {
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  margin-left: 10px;
+}
+  /* form */
+  .formulir {
+    max-width: 400px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+  }
+  
+  .judul {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .putih {
+    color: #ffffff;
+  }
