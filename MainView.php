@@ -13,7 +13,7 @@
 
     <style>
         .content{
-            background-image: url('assets/img/back1.jpg');
+            background-image: url('assets/image/bgHomePage.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
@@ -28,32 +28,19 @@
 
     <center class="tombol">
         <div class="row justify-content-center">
-            <!-- enkripsi kalimat -->
+            <!-- enkripsi kritik -->
             <div class = "col-2">
-                <a href="encrypt/enkripsi/enkripsi_kalimat.php">
-                    <button type="button" id="tombol" class="btn btn-secondary btn-lg">Enkripsi Kalimat</button>
+                <a href="../encrypt/enkripsi_kritik.php">
+                    <button type="button" id="tombol" class="btn btn-secondary btn-lg">Enkripsi Kritik</button>
                 </a>
             </div>
-            <!-- dekripsi kalimat -->
+            <!-- dekripsi review -->
             <div class="col-2 ">
-              <a href="encrypt/dekripsi/dekripsi_kalimat.php">
-                  <button type="button" id="tombol" class="btn btn-secondary btn-lg">Dekripsi Kalimat</button>
+              <a href="../encrypt/enkripsi_review.php">
+                  <button type="button" id="tombol" class="btn btn-secondary btn-lg">Enkripsi Review</button>
               </a>
             </div>
 
-            <!-- enkripsi gambar -->
-            <div class="col-2 ">
-              <a href="encrypt/dekripsi/enkripsi_gambar.php">
-                  <button type="button" id="tombol" class="btn btn-success btn-lg">Enkripsi Gambar</button>
-              </a>
-            <!-- dekripsi gambar -->
-            </div>
-            <div class="col-2 ">
-              <a href="encrypt/dekripsi/dekripsi_gambar.php">
-                  <button type="button" id="tombol" class="btn btn-secondary btn-lg">Dekripsi Gambar</button>
-              </a>
-            </div>
-        </div>
     </center>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
