@@ -15,7 +15,7 @@
         echo "
             <script>
                 alert('Pendaftaran berhasil, silahkan login');
-                document.location.href = 'Projek Akhir/LoginPage.php';
+                document.location.href = '../LoginPage.php';
             </script>
         ";
     } else {

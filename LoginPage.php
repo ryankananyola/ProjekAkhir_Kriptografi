@@ -13,7 +13,7 @@
 
     <style>
         .content{
-            background-image: url('assets/image/back3.jpg');
+            background-image: url('assets/image/bgLoginPage.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
@@ -38,7 +38,7 @@
             <h1 class="judul text-center fw-bold">
                 LOGIN
             </h1>
-            <form metho="POST" action="cekLogin.php">
+            <form method="POST" action="session/cekLogin.php">
                 <div class="mb-3">
                     <label class="form-label">
                         Username

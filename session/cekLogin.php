@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "config.php";
+include "../session/config.php";
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -25,7 +25,7 @@ if ($cek > 0) {
             echo "
                 <script>
                     alert('Status tidak valid.');
-                    document.location.href = 'LoginPage.php';
+                    document.location.href = '../../LoginPage.php';
                 </script>
             ";
         }
@@ -33,7 +33,7 @@ if ($cek > 0) {
         echo "
             <script>
                 alert('Login gagal! Username atau password Anda salah.');
-                document.location.href = 'LoginPage.php';
+                document.location.href = '../../LoginPage.php';
             </script>
         ";
     }
@@ -41,7 +41,7 @@ if ($cek > 0) {
     echo "
         <script>
             alert('Login gagal! Username atau password Anda salah.');
-            document.location.href = 'LoginPage.php';
+            document.location.href = '../../LoginPage.php';
         </script>
     ";
 }

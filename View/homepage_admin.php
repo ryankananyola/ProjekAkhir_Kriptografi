@@ -16,13 +16,24 @@
                 echo "
                     <script>
                         alert('Anda belum login. Silakan login terlebih dahulu.');
-                        document.location.href = 'login.php';
+                        document.location.href = '../../LoginPage.php';
                     </script>
                 ";
             }
         ?>
         <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
         <style scoped>
+
+            footer {    
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.1); 
+                backdrop-filter: blur(10px); 
+                color: black;
+                text-align: center;
+            }
         @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
         .navbar-1-1.navbar-light .navbar-nav .nav-link {
@@ -56,11 +67,6 @@
             <div>
             Halo <?php echo $_SESSION['username'];?>!
             </div>
-            <!-- <div>
-            <img class="position-absolute d-lg-block d-none hero-right" style="width: 50px;"
-                src="assets/img/logo.png"
-                alt="logo" />
-            </div> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -70,29 +76,19 @@
                 <li class="nav-item">
                 <a class="nav-link px-md-4 active" aria-current="page" href="homepage_admin.php">Daftar Akun</a>
                 </li>
-                <!-- <li class="nav-item">
-                <a class="nav-link px-md-4" href="kontak.php">Kontak</a>
-                </li> -->
                 <li class="nav-item">
-                <a class="nav-link px-md-4" href="kritik_admin.php">Kritik dan Saran</a>
+                <a class="nav-link px-md-4" href="kritikpage_admin.php">Kritik dan Saran</a>
                 </li>
-                <!-- <li class="nav-item">
-                <a class="nav-link px-md-4" href="#">Teams</a>
-                </li> -->
                 <li class="nav-item">
-                <a class="nav-link px-md-4" href="review_admin.php">Review</a>
+                <a class="nav-link px-md-4" href="reviewpage_admin.php">Review</a>
                 </li>
             </ul>
             <div class="d-flex">
-                <a class="btn btn-get-started btn-get-started-blue text-white" href="logout.php">Logout</a>
+                <a class="btn btn-get-started btn-get-started-blue text-white" href="../session/logout.php">Logout</a>
             </div>
             </div>
         </div>
         </nav>
-        <!-- <center>
-            <h1>Kritik dan Saran</h1>
-            <p>Tak ada gading yang tak retak. Silahkan tuliskan kritik dan saran Anda agar kami dapat berbenah.</p>
-        </center> -->
 
         <div align="center">
             <h1>Daftar Akun</h1>
@@ -109,7 +105,7 @@
             </thead>
             <tbody >
                 <?php
-                include 'config.php';
+                include '../session/config.php';
                 $query = mysqli_query ($connection, "SELECT * from akun");
                 $s=1;
                 while ($data=mysqli_fetch_array($query))
@@ -132,7 +128,11 @@
             
         </div>
 
-        
+    <!-- Blurred Footer -->
+    <footer>
+        © 2024 By Ryan Kana Nyola. All rights reserved.
+    </footer>
+
     </body>
 </html>
     

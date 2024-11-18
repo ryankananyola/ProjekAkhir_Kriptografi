@@ -16,13 +16,25 @@
             echo "
                 <script>
                     alert('Anda belum login. Silakan login terlebih dahulu.');
-                    document.location.href = 'login.php';
+                    document.location.href = '../../LoginPage.php';
                 </script>
             ";
         }
     ?>
        <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
     <style scoped>
+
+      footer {  
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+        color: black;
+        text-align: center;
+      }
+
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
       .navbar-1-1.navbar-light .navbar-nav .nav-link {
@@ -56,11 +68,6 @@
         <div>
           Halo <?php echo $_SESSION['username'];?>!
         </div>
-        <!-- <div>
-          <img class="position-absolute d-lg-block d-none hero-right" style="width: 50px;"
-              src="assets/img/logo.png"
-              alt="logo" />
-        </div> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -68,23 +75,20 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link px-md-4 active" aria-current="page" href="homepage.php">Home</a>
+              <a class="nav-link px-md-4 active" aria-current="page" href="homepage_user.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link px-md-4" href="kontak.php">Kontak</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-md-4" href="kritik.php">Kritik dan Saran</a>
+              <a class="nav-link px-md-4" href="kritikpage_user.php">Kritik dan Saran</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link px-md-4" href="#">Teams</a>
-            </li> -->
             <li class="nav-item">
-              <a class="nav-link px-md-4" href="review.php">Review</a>
+              <a class="nav-link px-md-4" href="reviewpage_user.php">Review</a>
             </li>
           </ul>
           <div class="d-flex">
-            <a class="btn btn-get-started btn-get-started-blue text-white" href="logout.php">Logout</a>
+            <a class="btn btn-get-started btn-get-started-blue text-white" href="../session/logout.php">Logout</a>
           </div>
         </div>
       </div>
@@ -482,29 +486,34 @@
             class="left-column flex-lg-grow-1 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
             <h1 class="title-text-big">
               Apa Itu<br class="d-lg-block d-none" />
-              <span style="color: #4E91F9">Mekar Jaya</span>?<br class="d-lg-block d-none" />
+              <span style="color: #4E91F9">Yasha Restoran</span>?<br class="d-lg-block d-none" />
               
             </h1>
             <p class="text-caption">
-              Mekar Jaya adalah UMKM mebel sebagai bentuk perwujudan dedikasi kami terhadap seni dan keahlian dalam pembuatan perabotan.
+              Yasha Restoran adalah restoran makanan khas dari daerah Timur Indonesia.
               <br class="d-sm-block d-none" />
-              Dengan fokus pada produksi mebel berkualitas tinggi, UMKM ini menawarkan desain unik dan fungsionalitas yang memenuhi kebutuhan pelanggan.
+              Dengan fokus pada makanan-makanan yang mungkin jarang ada selain di daerah Timur, Kami berharap dapat memenuhi rasa penasaran konsumen.
             </p>
             
           </div>
 
           <!-- Right Column -->
-          <div class="right-column d-flex justify-content-center justify-content-lg-start text-center pe-0" >
+          <!-- <div class="right-column d-flex justify-content-center justify-content-lg-start text-center pe-0" >
             <img class="position-absolute d-lg-block d-none hero-right" style="width: 450px"
               src="assets/img/mj.png"
               alt="logo" />
-           
-          </div>
+          </div> -->
+
         </div>
       </div>
     </div>
   </section> 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    </body>
-  </html>
+    
+    <!-- Blurred Footer -->
+    <footer>
+        © 2024 By Ryan Kana Nyola. All rights reserved.
+    </footer>
+</body>
+</html>
     

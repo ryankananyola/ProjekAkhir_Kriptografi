@@ -13,7 +13,7 @@
 
     <style>
         .content{
-            background-image: url('assets/image/back3.jpg');
+            background-image: url('assets/image/bgRegisPage.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
